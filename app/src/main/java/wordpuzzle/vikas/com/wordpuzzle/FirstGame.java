@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 public class FirstGame extends AppCompatActivity {
 
     ImageButton imgbtn;
-    Button  E , N , T , U , I;
+    Button  E , N , T , U , I,enter;
     TextView txtvww1,txtvw2,txtvw3;
     double j;
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,8 @@ public class FirstGame extends AppCompatActivity {
         txtvww1 = findViewById(R.id.txtvw1);
         txtvw2 = findViewById(R.id.txtvw2);
         txtvw3 = findViewById(R.id.txtvw3);
+        enter = findViewById(R.id.enter);
+
 
 
         E.setOnClickListener(new View.OnClickListener() {
@@ -38,15 +40,19 @@ public class FirstGame extends AppCompatActivity {
                 {
                     txtvww1.setText("E");
                     j++;
+
+           //        string = string+  Integer.parseInt(txtvww1.getText().toString());
                 }
                 else if (j==1)
                 {
                     txtvw2.setText("E");
+           //         string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==2)
                 {
                     txtvw3.setText("E");
+            //        string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
             }
@@ -58,16 +64,19 @@ public class FirstGame extends AppCompatActivity {
                 if (j==0)
                 {
                     txtvww1.setText("N");
+              //      string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==1)
                 {
                     txtvw2.setText("N");
+               //     string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==2)
                 {
                     txtvw3.setText("N");
+   //                 string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
             }
@@ -79,16 +88,19 @@ public class FirstGame extends AppCompatActivity {
                 if (j==0)
                 {
                     txtvww1.setText("T");
+     //               string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==1)
                 {
                     txtvw2.setText("T");
+       //             string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==2)
                 {
                     txtvw3.setText("T");
+         //           string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
             }
@@ -99,16 +111,19 @@ public class FirstGame extends AppCompatActivity {
                 if (j==0)
                 {
                     txtvww1.setText("U");
+           //         string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==1)
                 {
                     txtvw2.setText("U");
+             //       string = string+  Integer.parseInt(txtvww1.getText().toString());
                 j++;
                 }
                 else if (j==2)
                 {
                     txtvw3.setText("U");
+               //     string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
             }
@@ -119,21 +134,23 @@ public class FirstGame extends AppCompatActivity {
                 if (j==0)
                 {
                     txtvww1.setText("I");
+                 //   string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==1)
                 {
                     txtvw2.setText("I");
+                   // string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
                 else if (j==2)
                 {
                     txtvw3.setText("I");
+  //                  string = string+  Integer.parseInt(txtvww1.getText().toString());
                     j++;
                 }
             }
         });
-
 
 
 
