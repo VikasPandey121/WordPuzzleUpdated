@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 ImageButton imgbtn;
-Button instruction,facebook,twitter,blogspot;
+Button facebook,twitter,blogspot,features;
 
 
 
@@ -20,10 +20,10 @@ Button instruction,facebook,twitter,blogspot;
         setContentView(R.layout.activity_main);
 
         imgbtn = findViewById(R.id.imgbtn);
-        instruction = findViewById(R.id.instruction);
         facebook = findViewById(R.id.facebook);
         twitter = findViewById(R.id.twitter);
         blogspot = findViewById(R.id.blogspot);
+        features = findViewById(R.id.instruction);
 
         imgbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +37,14 @@ Button instruction,facebook,twitter,blogspot;
             public void onClick(View v) {
                 Intent i2 = new Intent((Intent.ACTION_VIEW), Uri.parse("https://www.facebook.com/profile.php?id=100009075581243"));
                 startActivity(i2);
+            }
+        });
+
+        features.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentlst = new Intent( MainActivity.this,Features.class);
+                startActivity(intentlst);
             }
         });
 
