@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstWordGame"
+    tools:context=".FirstGame"
     android:orientation="vertical">
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -106,5 +105,7 @@
         android:layout_marginTop="130dp"
         android:background="@android:color/black"
         app:srcCompat="@android:drawable/ic_media_previous" />
+
+
 
 </LinearLayout>
